@@ -8,5 +8,5 @@ crate-type = ["cdylib"]
 
 [dependencies]
 abi_stable = "0.11.3"
-nadi_core = "0.7.0"
+nadi_core = {path="../nadi-system/nadi_core", version= "0.8.0"}
 hecdss_sys = {path = "./hecdss-sys"}
