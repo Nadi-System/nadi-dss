@@ -13,6 +13,7 @@
 #include "zStructArray.h"
 #include "zStructSpatialTin.h"
 #include "zStructSpatialGrid.h"
+#include "checks.h"
 
 
 #define STATUS_OKAY 0
@@ -111,8 +112,9 @@ int zpathnameForm(const char *aPart, const char *bPart, const char *cPart, const
 				  const char *ePart, const char *fPart, char *pathname, size_t sizeofPathname);
 void zmaxPart(long long *ifltab, int *maxParts);
 void zmaxPart7(long long *ifltab, int *maxParts);
-int ztsGetEPartFromInterval(int intervalSeconds, char *ePart, size_t sizeofEpart);
 char* zsetCollectionSequence(char* pathname, int sequenceNumber);
+int isDpartEmpty(const char* pathname);
+int isTsPattern(const char* pathname); 
 
 //  Missing data
 float zmissingFlag();											//  Returns float missing flag

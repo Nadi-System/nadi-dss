@@ -3,6 +3,8 @@
 
 #include "zStructBasic.h"
 
+#define PARAMETER_NAME_SIZE 17
+
 #define	zSTRUCT_pathname 0
 #define	zSTRUCT_pathnameInternal 1
 #define	zSTRUCT_timeZoneName 2
@@ -108,6 +110,11 @@
 #define INT_HEAD_pdLabelsLength			3
 #define INT_HEAD_pdPrecision			4
 #define INT_HEAD_pdUnits				5
+
+
+//  Text data internal header
+#define INT_HEAD_text_size 6
+
 
 
 #define INT_HEAD_SIZE 200

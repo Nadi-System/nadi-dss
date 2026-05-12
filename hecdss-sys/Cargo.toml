@@ -1,6 +1,6 @@
 [package]
 name = "hecdss_sys"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["Gyan Basyal <gyanbasyalz@gmail.com>"]
 build = "build.rs"
 links = "heclib"
@@ -9,10 +9,10 @@ description = """
 Rust unsafe bindings for HEC-DSS7 C library funtions and structures.
 """
 categories = ["ffi-bindings"]
-edition = "2021"
+edition = "2024"
 
 [lib]
 path= "src/lib.rs"
 
 [build-dependencies]
-bindgen = "0.72.0"
+bindgen = "0.72.1"
