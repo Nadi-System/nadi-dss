@@ -6,6 +6,7 @@ use std::path::PathBuf;
 fn main() {
     let os = env::var("CARGO_CFG_TARGET_OS");
     println!("cargo:rustc-link-lib=heclib");
+    println!("cargo:rustc-link-lib=z");
     println!("cargo:rustc-link-lib=gfortran");
     match os.as_ref().map(|x| &**x) {
         //Ok("linux") => println!("cargo:rustc-link-search=hecdss-sys/dss7/linux64"),
